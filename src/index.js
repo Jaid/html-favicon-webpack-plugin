@@ -11,7 +11,7 @@ const debug = require("debug")(_PKG_NAME)
 /**
  * @class
  */
-export default class PkgBannerPlugin {
+export default class HtmlFaviconPlugin {
 
   /**
    * @constructor
@@ -28,11 +28,10 @@ export default class PkgBannerPlugin {
    */
   apply(compiler) {
     compiler.hooks.compilation.tap(_PKG_NAME, compilation => {
-      compiler.hooks.beforeAssetTagGeneration.alterAssetTagGroups.tapAsync(_PKG_NAME, (data, cb) => {
-        data.html += "The Magic Footer"
+      compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(_PKG_NAME, (data, cb) => {
+        data.html += "The Magic Footera"
         cb(null, data)
       })
     })
   }
-
 }
