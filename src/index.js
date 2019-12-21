@@ -1,11 +1,13 @@
 /** @module html-favicon-webpack-plugin */
 
-import path from "path"
-
-const debug = require("debug")(_PKG_NAME)
+import createHtmlElement from "create-html-element"
+import insertStringAfter from "insert-string-after"
 
 /**
  * @typedef {Object} Options
+ * @prop {string} [href = /favicon.ico]
+ * @prop {string} [rel = icon]
+ * @prop {string} [type = isIco ? "image/x-icon" : "image/png"]
  */
 
 /**
@@ -19,7 +21,13 @@ export default class HtmlFaviconPlugin {
    */
   constructor(options) {
     this.options = {
+      href: "/favicon.ico",
+      rel: "icon",
       ...options,
+    }
+    if (!this.options.type) {
+      const isIco = /\.ico$/i.test(this.options.href)
+      this.options.type = isIco ? "image/x-icon" : "image/png"
     }
   }
 
@@ -29,7 +37,15 @@ export default class HtmlFaviconPlugin {
   apply(compiler) {
     compiler.hooks.compilation.tap(_PKG_NAME, compilation => {
       compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(_PKG_NAME, (data, cb) => {
-        data.html += "The Magic Footera"
+        const element = createHtmlElement({
+          name: "link",
+          attributes: {
+            rel: this.options.rel,
+            type: this.options.type,
+            href: this.options.href,
+          },
+        })
+        data.html = insertStringAfter(data.html, "<head>", element)
         cb(null, data)
       })
     })
