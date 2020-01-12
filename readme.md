@@ -1,11 +1,25 @@
 # html-favicon-webpack-plugin
 
 
-Webpack plugin that adds a favicon link tag to html-webpack-plugin output.
+<a href="https://raw.githubusercontent.com/Jaid/html-favicon-webpack-plugin/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/html-favicon-webpack-plugin?style=flat-square" alt="License"/></a>  
+<a href="https://actions-badge.atrox.dev/Jaid/html-favicon-webpack-plugin/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fhtml-favicon-webpack-plugin%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/commits"><img src="https://img.shields.io/github/commits-since/Jaid/html-favicon-webpack-plugin/v1.0.0?style=flat-square&logo=github" alt="Commits since v1.0.0"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/commits"><img src="https://img.shields.io/github/last-commit/Jaid/html-favicon-webpack-plugin?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/issues"><img src="https://img.shields.io/github/issues/Jaid/html-favicon-webpack-plugin?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/html-favicon-webpack-plugin"><img src="https://img.shields.io/npm/v/html-favicon-webpack-plugin?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/html-favicon-webpack-plugin?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/html-favicon-webpack-plugin"><img src="https://img.shields.io/npm/dm/html-favicon-webpack-plugin?style=flat-square&logo=npm" alt="Downloads"/></a>
 
-<a href="https://raw.githubusercontent.com/Jaid/html-favicon-webpack-plugin/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/html-favicon-webpack-plugin?style=flat-square&color=success" alt="License"/></a>  
-<a href="https://github.com/Jaid/html-favicon-webpack-plugin/commits"><img src="https://img.shields.io/github/commits-since/Jaid/html-favicon-webpack-plugin/v1.0.0?style=flat-square&logo=github&color=success" alt="Commits since v1.0.0"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/commits"><img src="https://img.shields.io/github/last-commit/Jaid/html-favicon-webpack-plugin?style=flat-square&logo=github&color=red" alt="Last commit"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/issues"><img src="https://img.shields.io/github/issues/Jaid/html-favicon-webpack-plugin?style=flat-square&logo=github&color=red" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/html-favicon-webpack-plugin"><img src="https://img.shields.io/npm/v/html-favicon-webpack-plugin?style=flat-square&logo=npm&label=latest%20version&color=success" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/html-favicon-webpack-plugin/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/html-favicon-webpack-plugin?style=flat-square&logo=npm&color=red" alt="Dependents"/></a> <a href="https://npmjs.com/package/html-favicon-webpack-plugin"><img src="https://img.shields.io/npm/dm/html-favicon-webpack-plugin?style=flat-square&logo=npm&color=red" alt="Downloads"/></a>
+**Webpack plugin that adds a favicon link tag to html-webpack-plugin output.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installation
 <a href="https://npmjs.com/package/html-favicon-webpack-plugin"><img src="https://img.shields.io/badge/npm-html--favicon--webpack--plugin-C23039?style=flat-square&logo=npm" alt="html-favicon-webpack-plugin on npm"/></a>
@@ -21,11 +35,30 @@ yarn add --dev html-favicon-webpack-plugin@^1.0.0
 
 
 
+
+
+
+## Development
+
+
+
+Setting up:
+```bash
+git clone git@github.com:Jaid/html-favicon-webpack-plugin.git
+cd html-favicon-webpack-plugin
+npm install
+```
+Testing in production environment:
+```bash
+npm run test
+```
+
+
 ## License
 ```text
 MIT License
 
-Copyright © 2019, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
+Copyright © 2020, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
