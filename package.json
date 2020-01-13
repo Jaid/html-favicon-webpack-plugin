@@ -38,5 +38,9 @@
   },
   "name": "html-favicon-webpack-plugin",
   "description": "Webpack plugin that adds a favicon link tag to html-webpack-plugin output.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/html-favicon-webpack-plugin"
+  }
 }
