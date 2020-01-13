@@ -37,5 +37,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "html-favicon-webpack-plugin",
-  "description": "Webpack plugin that adds a favicon link tag to html-webpack-plugin output."
+  "description": "Webpack plugin that adds a favicon link tag to html-webpack-plugin output.",
+  "funding": "https://github.com/sponsors/jaid"
 }
