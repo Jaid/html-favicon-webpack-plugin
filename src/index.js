@@ -1,7 +1,7 @@
 /** @module html-favicon-webpack-plugin */
 
-import HtmlWebpackPlugin from "html-webpack-plugin"
 import createHtmlElement from "create-html-element"
+import HtmlWebpackPlugin from "html-webpack-plugin"
 import insertStringAfter from "insert-string-after"
 
 /**
