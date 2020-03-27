@@ -1,5 +1,6 @@
 /** @module html-favicon-webpack-plugin */
 
+import HtmlWebpackPlugin from "html-webpack-plugin"
 import createHtmlElement from "create-html-element"
 import insertStringAfter from "insert-string-after"
 
@@ -36,7 +37,7 @@ export default class HtmlFaviconPlugin {
    */
   apply(compiler) {
     compiler.hooks.compilation.tap(_PKG_NAME, compilation => {
-      compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(_PKG_NAME, (data, cb) => {
+      HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(_PKG_NAME, (data, cb) => {
         const element = createHtmlElement({
           name: "link",
           attributes: {
