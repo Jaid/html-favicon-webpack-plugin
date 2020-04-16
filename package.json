@@ -42,5 +42,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/html-favicon-webpack-plugin"
-  }
+  },
+  "homepage": "https://github.com/Jaid/html-favicon-webpack-plugin",
+  "keywords": []
 }
