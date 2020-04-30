@@ -43,5 +43,18 @@
     "url": "https://github.com/jaid/html-favicon-webpack-plugin"
   },
   "homepage": "https://github.com/Jaid/html-favicon-webpack-plugin",
-  "keywords": []
+  "keywords": [
+    "app",
+    "favicon",
+    "html",
+    "html-webpack-plugin",
+    "html-webpack-plugin-plugin",
+    "lib",
+    "library",
+    "util",
+    "utility",
+    "webapp",
+    "webpack",
+    "webpack-plugin"
+  ]
 }
